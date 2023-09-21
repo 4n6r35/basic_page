@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,500;1,700&family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="_content ">
+        <div class="c container_p ">
+            <div class="from-content signIn">
+                <div class="title">Login</div>
+                <input id="input-email" class="input_Field" type="email" name="email" placeholder="Email de usuario" required>
+                <input id="input-pass" class="input_Field" type="password" name="password" placeholder="Contraseña" required>
+                <button id="btnsignIn" class="button" type="submit"> Login</button>
+                <!-- <a class="redirect" href="../UpdatePassword/reset-pass.html">He olvidado micontraseña</a> -->
+                <a onclick="toggleForm()" class="redirect ">Crear cuenta →</a>
+            </div>
+            <div class="from-content signUp">
+                <div class="title">Sign Up</div>
+                <input class="input_Field" type="text" name="nombre" placeholder="Primer nombre" required>
+                <input class="input_Field" type="text" name="apellido" placeholder="Primer apellido" required>
+                <input class="input_Field" type="phone" name="phone" placeholder="Celular" required>
+                <input class="input_Field" type="email" name="email" placeholder="Correo" required>
+                <input class="input_Field" type="password" name="password" placeholder="Contraseña" required>
+                <button class="button"> Sign Up</button>
+                <a onclick="toggleForm()" class="redirect ">← Iniciar Seccion</a>
+            </div>
+
+        </div>
+        <div class="c2">
+            <img class="img-content image-move" src="./assets/lg.jpg">
+        </div>
+    </div>
+
+    <script src="./scripts/index.js"></script>
+</body>
+</html>
